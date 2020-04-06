@@ -1,0 +1,27 @@
+{
+  "name": "vuepressBlog",
+  "version": "1.0.0",
+  "description": "这里是描述啊啊啊啊啊啊",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "bash deploy.sh",
+    "deploy:build": "npm run build && npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meetyouzi/youzi-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-google-analytics": "^1.2.0",
+    "@vuepress/plugin-pwa": "^1.2.0",
+    "gh-pages": "^2.1.1",
+    "gitalk": "^1.5.0",
+    "vuepress": "^1.2.0"
+  }
+}
