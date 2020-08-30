@@ -14,7 +14,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m '添加css转换文字大小写'
 
 # 如果发布到 https://<USERNAME>.github.io
  git push -f https://github.com/MeetYouZi/meetyouzi.github.io.git master

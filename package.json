@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "这里是描述啊啊啊啊啊啊",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "bash deploy.sh",
     "deploy:build": "npm run build && npm run deploy"

@@ -1,0 +1,23 @@
+# css 疑难杂症
+
+### 解决移动端边框内阴影
+```css
+input {
+  appearance: none
+}
+```
+
+### 信封样式
+```css
+{
+	padding: 1em;
+	border: 1em solid transparent;
+	background: linear-gradient(white, white) padding-box,
+	            repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, 
+	              #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+	max-width: 20em;
+	font: 100%/1.6 Baskerville, Palatino, serif;
+}
+```
+
+
