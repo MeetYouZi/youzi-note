@@ -6,3 +6,6 @@
 ## 微信分享
 微信分享获取微信签名数据 域名后面必须带/；
 例：http://www.abc.com/
+
+### 微信小程序踩坑记录
+解决文本 /n 换行 `style="white-space:pre-wrap"`
