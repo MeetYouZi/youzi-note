@@ -14,12 +14,12 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m '添加css转换文字大小写'
+git commit -m 'init'
 
 # 如果发布到 https://<USERNAME>.github.io
- git push -f https://github.com/MeetYouZi/meetyouzi.github.io.git master
+# git push -f https://github.com/MeetYouZi/meetyouzi.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:meetyouzi/youzi-note.git master:gh-pages
+ git push -f https://github.com/MeetYouZi/youzi-note.git master:gh-pages
 
 cd -
