@@ -155,6 +155,21 @@ const isWeChat = /micromessenger/.test(UA)
 const isMobile = 'ontouchstart' in window
 ```
 
+### 使用 URLSearchParams 解析 URL 的查询字符串
+```javascript
+const url = 'o=desc&q=URLSearchParams&s=stars&type=Repositories'
+// 实例化
+const searchParams = new URLSearchParams(url)
+
+// toString 返回搜索参数组成的字符串并进行编码
+searchParams.toString() // o=desc&q=URLSearchParams&s=stars&type=Repositories
+
+// 获取指定搜索参数的第一个值
+searchParams.get('q') // "URLSearchParams"
+searchParams.get('youzi') // null
+
+```
+
 
 
 
