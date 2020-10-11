@@ -61,5 +61,13 @@ function isDarkSchemePreference(){
 }
 ```
 
+css 阴影
+```css
+div{
+  box-shadow: 0 0 1.375rem 0 rgba(18,51,119,.2);
+}
+```
+
+
 
 
