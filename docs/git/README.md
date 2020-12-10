@@ -57,8 +57,59 @@ git push [remote][branch]
 git push -u origin master -f
 
 ### 删除 commit 记录
-1，回退版本 git reset --hard xxxx ;
-2，强制提交 git push -u origin master -f
+```shell script
+# 1，回退版本
+git reset --hard xxxx ;
+# 2，强制提交 
+git push -u origin master -f
+```
 
+
+### 回退提交
+```shell script
+# 回滚最新一次的提交记录
+git revert HEAD
+
+# 回滚前一次的提交记录
+git revert HEAD^
+git reset --hard HEAD^ //不会保留更改
+
+
+# reset
+git reset [--soft | --mixed | --hard
+
+--mixed
+ 会保留源码,只是将git commit和index 信息回退到了某个版本.
+ git reset 默认是 --mixed 模式 
+ git reset --mixed  等价于  git reset
+ 
+ --soft
+ 保留源码,只回退到commit 信息到某个版本.不涉及index的回退,如果还需要提交,直接commit即可.
+ 
+ --hard
+ 源码也会回退到某个版本,commit和index 都回回退到某个版本.(注意,这种方式是改变本地代码仓库源码)
+
+```
+
+### 清空提交记录
+```shell script
+# 创建 orphan 分支
+git checkout --orphan [分支名]
+
+# 添加需要上传文件
+git add .
+
+# 提交更改
+git commit -m "Initial"
+
+# 删除需要清空提交记录的分支
+git branch -D master
+
+# 将当前分支重命名为需要清空提交记录的分支名
+git branch -m master
+
+# 强制更新存储库
+git push -f origin master
+```
 
 
