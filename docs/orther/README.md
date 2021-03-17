@@ -13,3 +13,9 @@ git config --global http.https://github.com.proxy http://127.0.0.1:1087
 ```
 yarn cache clean
 ```
+### 本地跑 npm 包
+```
+yarn link
+
+-- 使用 yarn link 'xxx'
+```
