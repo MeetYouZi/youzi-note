@@ -27,6 +27,10 @@ module.exports = {
         collapsable: true,
         path: '/react/'
       }, {
+        title: '工具集',
+        collapsable: true,
+        children: ['js/', 'tools/vscode', 'tools/webstorm']
+      }, {
         title: 'Js集',
         collapsable: true,
         children: ['js/', 'js/skill', 'js/evenLoop']

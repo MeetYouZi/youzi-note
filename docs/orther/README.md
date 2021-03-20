@@ -17,5 +17,7 @@ yarn cache clean
 ```
 yarn link
 
+-- 取消本地使用 yarn unlink
+
 -- 使用 yarn link 'xxx'
 ```
